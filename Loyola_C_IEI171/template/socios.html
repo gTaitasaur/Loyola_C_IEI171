@@ -26,18 +26,18 @@
             </tr>
         </thead>
         <tbody>
-            {% for pro in socio %}
+            {% for socio in socio %}
             <tr>
-                <td>{{ pro.nombreSocio }}</td>
-                <td>{{ pro.fechaIncorporacion }}</td>
-                <td>{{ pro.anoNacimiento }}</td>
-                <td>{{ pro.telefono }}</td>
-                <td>{{ pro.email }}</td>  
-                <td>{{ pro.get_sexo_display }}</td>
-                <td>{{ pro.get_estado_display }}</td>  
-                <td>{{ pro.observacion }}</td>  
-                <td><a class="btn btn-success btn-sm" href="/modificar/{{pro.id}}"><i class="bi bi-pencil-square"></i></a></td>       
-                <td><a class="btn btn-danger btn-sm" href="/eliminar/{{pro.id}}"><i class="bi bi-trash"></i></a></td>         
+                <td>{{ socio.nombreSocio }}</td>
+                <td>{{ socio.fechaIncorporacion }}</td>
+                <td>{{ socio.anoNacimiento }}</td>
+                <td>{{ socio.telefono }}</td>
+                <td>{{ socio.email }}</td>  
+                <td>{{ socio.get_sexo_display }}</td>
+                <td>{{ socio.get_estado_display }}</td>  
+                <td>{{ socio.observacion }}</td>  
+                <td><a class="btn btn-success btn-sm" href="/modificar/{{socio.id}}"><i class="bi bi-pencil-square"></i></a></td>       
+                <td><a class="btn btn-danger btn-sm" href="/eliminar/{{socio.id}}"><i class="bi bi-trash"></i></a></td>         
             </tr>
             {% endfor %}
         </tbody>

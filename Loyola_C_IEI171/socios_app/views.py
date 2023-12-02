@@ -22,7 +22,7 @@ def agregarSocio(request):
         form = FormSocio(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('index'))
+            return HttpResponseRedirect(reverse('socios'))
         else:
             print(form.errors)
 
@@ -42,7 +42,7 @@ def modificarSocio(request, id):
         form = FormSocio(request.POST, instance = socio)
         if (form.is_valid()):
             form.save()
-        return redirect('/socios')
+        return redirect('socios')
   
     data = {'form': form}
     return render (request, 'agregar.html', data)
