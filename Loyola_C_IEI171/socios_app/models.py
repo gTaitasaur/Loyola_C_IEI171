@@ -9,7 +9,7 @@ ESTADOS_SELECT = [
 SEXO_SELECT = [
     ('F', 'Femenino'),
     ('M', 'Masculino'),
-    ('O', '39 tipos de gay'),
+    ('O', 'Otro'),
 ]
 
 class Socios(models.Model):
